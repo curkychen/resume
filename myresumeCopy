@@ -1,0 +1,240 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ran(Michelle)}{Chen}{ %\urlstyle{same}\url{http://debarghyadas.com} \\
+\href{mailto:ranchenforjob@gmail.com}{ranchenforjob@gmail.com} | 813.585.4578
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.40\textwidth} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Carnegie Mellon University}
+\descript{M.S in Electrical and Computer Engineering}
+\location{Expected May 2018 | Pittsburgh, PA \\ Cum. GPA: 3.73/4.0}
+\sectionsep
+
+\subsection{University of Florida}
+\descript{Coursework toward M.S in Computer and Information Science}
+\location{September 2016 - January 2017 | Gainesville, FL \\ Cum. GPA: 3.22/4.0}
+\sectionsep
+
+\subsection{Nanjing University of Aeronautics and Astronautics}
+\descript{B.S in Electrical Engineering and Automation}
+\location{June 2016 | Nanjing, China \\ Cum. GPA: 87/100}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github: \href{https://github.com/curkychen}{\custombold{https://github.com/curkychen}} \\
+LinkedIn:  \href{https://www.linkedin.com/in/ran-chen-088a1011b}{\custombold{linkedin.com/in/ran-chen-088a1011b}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+Principles of Software Construction(OOD, Concurrency) \\
+Introduction to Computer Systems \\
+Build Reliable Distributed Systems \\
+Pattern Recognition Theory \\
+Parallel Programming \\
+Python For Developer \\
+Java for Application Programmer \\
+Data Structure \\
+Analysis of Algorithm \\
+Network Science and Application
+\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages}
+\location{Over 5000 lines:}
+Java \textbullet{}   C\\ 
+\location{Over 1000 lines:}
+Python \textbullet{} Javascript \textbullet{} CSS \textbullet{} PHP \textbullet{} C++ \textbullet{} \LaTeX\ \\
+\location{Familiar:}
+MySQL\textbullet{} PostgreSQL \textbullet{} Go
+\sectionsep
+\subsection{Frameworks}
+AngularJS \textbullet{} JQuery \textbullet{} NodeJS \textbullet{} J2EE \textbullet{} MapReduce
+\sectionsep
+\subsection{Tools}
+JUnit Test \textbullet{} GDB \textbullet{} Valgrind \textbullet{} Github \textbullet{} Tomcat
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.59\textwidth} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Web Development Intern}
+\descript{| Carnegie Mellon University }
+\location{May 2017 – August 2017 | Pittsburgh, PA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {Developed the user authentication feature with Shibboleth on Apache.}\item {Added several features such as multi file uploading, images previewing, made images of web page draggable
+with Angular.JS and jQuery.} \item{Implemented the database management with PostgreSQL.}\item {Completed the access control of the whole website with php.}\item {Applied gesture control of the web page with  Airpointr API.}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Product Recommendation System}
+\descript{| Java, MapReduce}
+\location{April 2017 – May 2017 | CMU}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {Generated the ranked list of recommendation products}
+\item {Designed recommandation system with collaborative filtering. }\item {Optimized the program with writable type, reusing writables and setting configurations, achieved 2x speed up.}
+\end{tightemize}
+
+\runsubsection{Dynamic Storage Allocator}
+\descript{| C}
+\location{April 2017 – May 2017 | CMU}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {Developed a dynamic memory allocator in C with high throughout of 28,761 Kops and 74.1\% memory utilization.}
+\item {Attained significant improvement in throughout and utilization by combining best fit and first fit method.}\item {Applied segregate linked list to manage the free blocks and 16 Bytes mini-size blocks to minimize internal fragmentation.
+}\item {Designed a heap consistency checker to help debug process and ensure the correctness of heap space.
+}
+\end{tightemize}
+\sectionsep
+\runsubsection{Tiny Proxy}
+\descript{| C}
+\location{March 2017 – April 2017 | CMU}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item {Implemented a multi-thread HTTP proxy server with caching.}
+\item {Validated and parsed HTTP requests to decide host, user-agent, connection, proxy-connection, and accept-encoding
+headers.}\item {Applied Pthread to execute each request concurrently and pthread-rwlock-t to ensure thread safety.
+}\item {Improved performance by caching web objects smaller than 100KB using least-recently-used (LRU) eviction
+policy.
+}
+\end{tightemize}
+\sectionsep
+\runsubsection{Web Crawler and Data Analysis Application}
+\descript{| Python}
+\location{Mar 2017 – April 2017 | CMU}
+\begin{tightemize}
+\item {Utilized Python set as the URL controller, got the introduction contents from 200 wiki items.}
+\item {Compared the similarity of every two set contents then visualized by OpenGraphiti.}
+\item {Applied the Naïve-Bayes classifier with python to classify crawled data as five categories with 66\% accuracy.}
+\end{tightemize}
+\sectionsep
+
+
+
+
+\end{minipage} 
+\end{document}
